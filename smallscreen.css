@@ -1,6 +1,7 @@
 html {
     margin: 0px;
     font-size: 3vw;
+    background: #777777;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 100vw;
+    width: 96vw;
     min-height: 640px;
 }
 
@@ -27,7 +28,7 @@ body {
     font-family: 'Loved by the King', cursive;
     font-size: 4em;
     font-weight: 400;
-    text-shadow: 5px 5px 10px #ff00ff;
+    text-shadow: 5px 5px 10px #00ff80;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,59 +38,122 @@ body {
 
 }
 
-nav {
-    position: relative;
-    background: #afafaf;
-    color: #ffffff;
-    min-height: 5vh;
-    padding: 5px;
+/* hamburger starts here */
+
+#mainMenu {
+    font-family: 'Saira Condensed', sans-serif;
+    display:none;
+    overflow:hidden; /* wrap floats and margins */
+    padding:0.25em;
+    border-top:2px solid #000000;
+}
+#mainMenu li {
+    float:left;
+    width:50%;
+    list-style-type: none;
+
 }
 
-ul {
-    display: none;
+ul#mainMenu {
+    border: 0px;
+    margin: 0px;
+    background-color: #555555;
+}
+#mainMenu a {
+    display: block;
+    padding: 0.75em;
+    margin: 0.25em;
+    color: #000000;
+    background:#777777;
+    text-decoration: none;
+}
+input#menuShowHide {
+    position: absolute;
+    left: -999px;
+}
+#menuShowHide + label {
+    font-family: 'Saira Condensed', sans-serif;
+    display:block;
+    padding:1em;
+    text-align:left;
+    font-weight:bold;
+    background: #777777;
+    color:#ffffff;
+}
+#menuShowHide + label:active,
+#menuShowHide + label:focus,
+#menuShowHide + label:hover {
+    background:#777777;
+}
+#menuShowHide + label:before {
+    content:"Öppna meny";
+}
+#menuShowHide:checked + label {
+    margin:0;
+}
+#menuShowHide:checked + label:before {
+    content:"Stäng meny";
+}
+#menuShowHide:checked ~ #mainMenu {
+    display:block;
 }
 
-
-.menu {
-    width: 35px;
-    height: 4px;
-    background: black;
-    margin: 6px;
-}
-
-nav:hover {
-    background: #ff0000;
+#active-link {
+    background-color: #00ff80;
 }
 
 main {
-    position: relative;
+    overflow: hidden;
     background: #555555;
     color: #ffffff;
-    height: 55vh;
-}
-
-h2 {
+    height: 120vh;
     text-align: center;
-    margin: 0px;
+    padding: 5px;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
+main img {
+    position: relative;
+    width: 60%;
+    height: auto;    
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    color: #00ff80;
+}
+h2 {
+    color: #00ff80;
+}
+
+main p {
+    color: #00ff80;
+}
 
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    background: #afafaf;
+    background: #777777;
     color: #ffffff;
     height: 75px;
     padding: 5px;
-    font-family: robota;
     font-size: 12px;
-
+    font-family: 'Saira Condensed', sans-serif;
 }
 
-div.footer1 {
-    position: relative;
+footer a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 p.footer1 {
@@ -99,3 +163,29 @@ p.footer1 {
     
 }
 
+.footer2 {
+    text-align: center;
+}
+
+p {
+    display: inline;
+    margin: 0px;
+    color: #000000;
+}
+
+#fb-active {
+    display: none;
+}
+
+#linkedin-active {
+    display: none;
+}
+ #mail-active {
+    display: none;
+}
+
+iframe {
+    width: 100px;
+    height: 75px;
+    border: 0px;
+}

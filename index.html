@@ -1,40 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Author" content="Loffe Knutsson">
+    <meta name="keywords" content="gitarr, elgitarr, gitarrshop, gitarraffär, ingelstad, växjö, småland, södra sverige">
+    <meta name="description" content="Ingelstad guitar shop - Välkommen till en gitarraffär i Ingelstad i södra Sverige, söder om Växjö, 
+    med många gitarrmodeller och ett stort lager. Vi utför även reparationer.">
+    <meta name="robots" content="index, follow"/>
+    <meta name="googlebot" content="index"/>
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
     <link rel="stylesheet" media="screen and (min-width: 600px)" href="bigscreen.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Loved+by+the+King&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap" rel="stylesheet">
     <title>Ingelstad Guitar Shop</title>
 </head>
 <body>
     <header>
-        <div id="div-logo">
+        <div id="div-logo" alt="Logo Ingelstad Guitar Shop">
             <p id="txt-logo">Ingelstad Guitar Shop</p>
         </div>
     </header>
         <nav>
-            <p class="menu"></p>
-            <p class="menu"></p>
-            <p class="menu"></p>
-            <ul> 
+            <input type="checkbox" id="menuShowHide">
+            <label for="menuShowHide"></label>
+            <ul id="mainMenu"> 
                 <li id="active-link"><a href="index.html">Startsida</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="gallery.html">Galleri</a></li>
-                <li><a href="menu.html">Meny</a></li>
+                <li><a href="galleri.html">Galleri</a></li>
+                <li><a href="reparationer.html">Reparationer</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-
     <main>
+        <h1>
+            Välkommen!
+        </h1>
         <h2>
-            Välkommen...
+            Till södra Sveriges bästa (?) gitarrshop!
         </h2>
-        <p>...till en gitarrshop med ett stort lager av akustiska gitarrer och elgitarrer. 
-
-        </p>
+        <p>Detta är en gitarrshop med ett stort lager av akustiska gitarrer och elgitarrer. Du har 
+        hittat rätt vare sig du söker nytt, begagnat eller vill hyra eller reparera. I Ingelstad
+        2 mil söder om Växjö i södra Sverige, Småland, har vi vår stora shop med ett enormt lager.
+        <br>
+        <h2>Gitarrer, gitarrer, gitarrer...</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+         Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <br><br>
+        <img src="media/gitarrer.jpg" width="600" height="600" alt="gitarrer" title="Elgitarrer">
+        
     </main>
 
     <footer>
@@ -43,30 +57,28 @@
             Ingelstad Guitar Shop<br>
             Ekvägen 15<br>
             355 71  Ingelstad<br>
-            <a href="tel:0701000000">070-1000 000</a>
+            <a href="tel:0701000000" title="telefon">070-1000 000</a>
             </address>
         </div>
         <div class="footer2">
-            <a href="http://www.facebook.com">
-                <div id="fb" class="tooltip">
-                    <span class="tooltipfb">Our Facebook page</span>
-                </div>
+            <a id="fb" href="http://www.facebook.com">
+            <img id="fb-inactive" src="media/fb-inactive.png" width="40" height="40" alt="facebook" title="Facebook"/>
+            <img id="fb-active" src="media/fb-active.png" width="40" height="40" alt="facebook" title="Facebook"/>
             </a>
-
-            <a href="http://www.linkedin.com">
-                <div id="linkedin" class="tooltip">
-                    <span class="tooltiplinkedin">Our Linkedin page</span>
-                </div>
+            <a id="linkedin" href="http://www.linkedin.com">
+            <img id="linkedin-inactive" src="media/linkedin-inactive.png" width="40" height="40" alt="linkedin" title="Linkedin"/>
+            <img id="linkedin-active" src="media/linkedin-active.png" width="40" height="40" alt="linkedin" title="Linkedin"/>
             </a>
-            <a href="mailto:order@shop.com?Subject=order" target="_top">
-                <div id="email" class="tooltip">
-                    <span class="tooltipemail">Send us an email</span>
-                </div>
+            <div>
+                <a id="mail" href="mailto:order@shop.com?Subject=order" target="_top">
+                <img id="mail-inactive" src="media/mail-inactive.png" width="40" height="40" alt="mail" title="Email us!"/>
+                <img id="mail-active" src="media/mail-active.png" width="40" height="40" alt="mail" title="Email us!"/>
             </a>
+            </div>
         </div>
         <div class="footer3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.990823255205!2d14.910345215952846!3d56.743123280829835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656e02f4307c665%3A0x7a48ead2deca0e50!2sEkv%C3%A4gen%2015%2C%20360%2044%20Ingelstad!5e0!3m2!1ssv!2sse!4v1571814675890!5m2!1ssv!2sse"
-            width="100" height="75" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+             allowfullscreen=""></iframe>
         </div>
     </footer>
 </body>

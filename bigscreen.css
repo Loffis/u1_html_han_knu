@@ -1,20 +1,26 @@
 html {
     margin: 0px;
-    font-size: 3vw;
+    background: #777777;
 }
 
 body {
+    background-image: url("media/Dean-Zero-Dave-Mustaine-Dystopia.png");
+    background-repeat: no-repeat;
+    font-family: 'Saira Condensed', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    width: 100vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 98vw;
     min-height: 640px;
 }
 
 #div-logo {
     position: relative;
-    background: #555555;
+    /*background: #555555;*/
     color: #000000;
     height: 18vh;
+    min-height: 110px;
     text-align: center;
     overflow: hidden;
 
@@ -23,9 +29,9 @@ body {
 #txt-logo {
     color: #ffffffb4;
     font-family: 'Loved by the King', cursive;
-    font-size: 48px;
+    font-size: 4.5em;
     font-weight: 400;
-    text-shadow: 5px 5px 10px #ff00ff;
+    text-shadow: 5px 5px 10px #00ff80;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,46 +41,159 @@ body {
 
 }
 
-#fb {
-    background-image: url("media/fb.jpg");
-    background-size: 55px 55px;
-    width: 55px;
-    height: 55px;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-
-#fb:hover {
-    width: 55px;
-    height: 55px;
-    background-image: url("media/fb-active.jpg") no-repeat;
-    
-}
-
-#linkedin {
-    background-size: 55px 55px;
-    background-image: url("media/linkedin-grey.png") no-repeat;
-
-    
-}
-
-#linkedin:hover {
-    background-image: url("media/linkedin-active.png") no-repeat;
-    
-}
-
-.tooltip .tooltipfb {
+label {
+    display: none;
     visibility: hidden;
-    width: 55px;
-    height: 55px;
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+
 }
 
-.tooltip:hover .tooltipfb {
-    visibility: visible;
+#mainMenu li {
+    display: inline;
+    padding: 0px 4.5vw;
+    font-size: 28px;
+}
+
+ul#mainMenu {
+    border: 0px;
+    margin: 0px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}
+#mainMenu a {
+    text-decoration: none;
+    color: #333333;
+}
+input#menuShowHide {
+    position: absolute;
+    left: -999px;
+}
+#menuShowHide + label {
+    display: none;
+}
+
+#active-link {
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #00ff80;
+}
+
+#mainMenu a:hover {
+    text-shadow: 5px 5px 10px white;
+    color: white;
+}
+
+main {
+    overflow: hidden;
+    height: 90vh;
+    text-align: center;
+    padding: 5px 100px;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+main img {
+    visibility: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    color: #00ff80;
+}
+
+h2 {
+    color: #00ff80;
+}
+
+main p {
+    color: #00ff80;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #777777;
+    color: #ffffff;
+    height: 75px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+footer a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p.footer1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}
+
+.footer2 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer2 div {
+    display: inline;
+}
+
+p {
+    display: inline;
+    margin: 0px;
+    color: #000000;
+}
+
+#fb #fb-active {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+}
+
+#fb:hover #fb-active {
+    display: inline;
+    padding-right: 10px;
+}
+
+#linkedin #linkedin-active {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 42px;
+    z-index: 99;
+}
+
+#linkedin:hover #linkedin-active {
+    display: inline;
+}
+
+#mail #mail-active {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 84px;
+    z-index: 99;
+}
+
+#mail:hover #mail-active {
+    display: inline;
+}
+
+iframe {
+    width: 300px;
+    height: 100px;
+    border: 0px;
 }
