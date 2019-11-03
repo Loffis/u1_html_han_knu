@@ -38,20 +38,19 @@ body {
 
 }
 
-/* hamburger starts here */
+/* navigationsmeny */
 
 #mainMenu {
     font-family: 'Saira Condensed', sans-serif;
-    display:none;
-    overflow:hidden; /* wrap floats and margins */
-    padding:0.25em;
-    border-top:2px solid #000000;
+    display: none;
+    overflow: hidden;
+    padding: 0.25em;
+    border-top: 2px solid #000000;
 }
 #mainMenu li {
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
     list-style-type: none;
-
 }
 
 ul#mainMenu {
@@ -73,29 +72,29 @@ input#menuShowHide {
 }
 #menuShowHide + label {
     font-family: 'Saira Condensed', sans-serif;
-    display:block;
-    padding:1em;
-    text-align:left;
-    font-weight:bold;
+    display: block;
+    padding: 1em;
+    text-align: left;
+    font-weight: bold;
     background: #777777;
-    color:#ffffff;
+    margin-bottom: 0px;
 }
 #menuShowHide + label:active,
 #menuShowHide + label:focus,
 #menuShowHide + label:hover {
-    background:#777777;
+    background: #777777;
 }
 #menuShowHide + label:before {
     content:"Öppna meny";
 }
 #menuShowHide:checked + label {
-    margin:0;
+    margin: 0;
 }
 #menuShowHide:checked + label:before {
-    content:"Stäng meny";
+    content: "Stäng meny";
 }
 #menuShowHide:checked ~ #mainMenu {
-    display:block;
+    display: block;
 }
 
 #active-link {
@@ -106,10 +105,11 @@ main {
     overflow: hidden;
     background: #555555;
     color: #ffffff;
-    height: 120vh;
+    height: auto;
     text-align: center;
     padding: 5px;
     font-family: 'Saira Condensed', sans-serif;
+    align-content: center;
 }
 
 main img {
@@ -188,4 +188,10 @@ iframe {
     width: 100px;
     height: 75px;
     border: 0px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
 }
