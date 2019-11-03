@@ -109,6 +109,8 @@ h1 {
     padding: 10px;
     margin: 0px;
     color: #00ff80;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 h2 {
@@ -235,6 +237,46 @@ input[type="submit"], input[type="reset"]{
     color: black;
     width: auto;
 }
+
+.div-pic-text {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: #555555;
+    width: 22rem;
+}
+
+.div-pic {
+    width: 100%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.div-text {
+    padding: 1em;
+}
+
+.text {
+    margin-bottom: 0px;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.5rem;
+    color: #00ff80;
+    background-color: #777777;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #333333;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 600px) and (max-width: 851px) {
     .container {
         margin-left: auto;
