@@ -19,7 +19,6 @@ body {
     height: 18vh;
     text-align: center;
     overflow: hidden;
-
 }
 
 #txt-logo {
@@ -34,10 +33,7 @@ body {
     transform: translate(-50%, -50%);
     margin: 0px;
     white-space: nowrap;
-
 }
-
-/* navigationsmeny */
 
 #mainMenu {
     font-family: 'Saira Condensed', sans-serif;
@@ -46,6 +42,7 @@ body {
     padding: 0.25em;
     border-top: 2px solid #000000;
 }
+
 #mainMenu li {
     float: left;
     width: 50%;
@@ -65,10 +62,12 @@ ul#mainMenu {
     background:#777777;
     text-decoration: none;
 }
+
 input#menuShowHide {
     position: absolute;
     left: -999px;
 }
+
 #menuShowHide + label {
     font-family: 'Saira Condensed', sans-serif;
     display: block;
@@ -83,15 +82,18 @@ input#menuShowHide {
 #menuShowHide + label:hover {
     background: #555555;
 }
+
 #menuShowHide + label:before {
     content:"Öppna meny";
 }
+
 #menuShowHide:checked + label {
     margin: 0;
 }
 #menuShowHide:checked + label:before {
     content: "Stäng meny";
 }
+
 #menuShowHide:checked ~ #mainMenu {
     display: block;
 }
@@ -123,6 +125,7 @@ h1 {
     margin: 0px;
     color: #00ff80;
 }
+
 h2 {
     color: #00ff80;
 }
@@ -130,7 +133,6 @@ h2 {
 main p {
     color: #00ff80;
 }
-
 
 footer {
     display: flex;
@@ -158,8 +160,7 @@ footer a:visited {
 p.footer1 {
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
-    
+    transform: translate(0, -50%); 
 }
 
 .footer2 {
@@ -179,6 +180,7 @@ p {
 #linkedin-active {
     display: none;
 }
+
  #mail-active {
     display: none;
 }
